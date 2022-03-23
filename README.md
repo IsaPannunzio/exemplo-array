@@ -1,7 +1,7 @@
 # Exemplo Array
 
 # Sobre
-Essa aplicação é um exemplo de array.
+Essa aplicação contém alguns exemplos do uso de array.
 
 # Tecnologias Utilizadas
 * Java
