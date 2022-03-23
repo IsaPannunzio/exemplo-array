@@ -25,7 +25,7 @@ public class ExemploArray {
 
         System.out.println("A média do aluno A é: " + totalAlunoA / notasAlunoA.length);
 
-        System.out.println("As notas do aluno B são: " + Arrays.toString(notasAlunoB));
+        System.out.println("\nAs notas do aluno B são: " + Arrays.toString(notasAlunoB));
 
         double totalAlunoB = 0;
 
@@ -35,9 +35,21 @@ public class ExemploArray {
 
         System.out.println("A média do aluno B é: " + totalAlunoB / notasAlunoB.length);
 
+        //Usando foreach
+        System.out.println("\nNotas do aluno A: ");
+        for(double notaA: notasAlunoA){
+            System.out.println(notaA);
+
+
+        }
+        System.out.println("\nNotas do aluno B: ");
+        for(double notaB: notasAlunoB){
+            System.out.println(notaB);
+        }
+
         //Para exibir o valor em uma posição específica:
-        System.out.println(notasAlunoA[0]);
-        System.out.println(notasAlunoB[2]);
+        System.out.println("\nA nota do aluno A na posição 0 é: " + notasAlunoA[0]);
+        System.out.println("A nota do aluno B na posição 2 é: " + notasAlunoB[2]);
 
 
     }
