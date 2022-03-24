@@ -8,5 +8,5 @@ Essa aplicação contém alguns exemplos do uso de array.
 
 # Como executar a Aplicação
 * Baixe o JDK
-* Execute através da IDE de sua preferência
+* Execute o programa através da IDE de sua preferência
 
