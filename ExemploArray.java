@@ -1,6 +1,7 @@
 package com.company.array;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ExemploArray {
 
@@ -35,7 +36,7 @@ public class ExemploArray {
 
         System.out.println("A média do aluno B é: " + totalAlunoB / notasAlunoB.length);
 
-        //Usando foreach
+        //Utilizando foreach
         System.out.println("\nNotas do aluno A: ");
         for(double notaA: notasAlunoA){
             System.out.println(notaA);
@@ -51,6 +52,27 @@ public class ExemploArray {
         System.out.println("\nA nota do aluno A na posição 0 é: " + notasAlunoA[0]);
         System.out.println("A nota do aluno B na posição 2 é: " + notasAlunoB[2]);
 
+        //Utilizando scanner
+        Scanner entrada = new Scanner(System.in);
 
+        System.out.println("\nQuantas notas o aluno C possui? ");
+
+        int qtdNotasC = entrada.nextInt();
+
+        double[] notasAlunoC = new double[qtdNotasC];
+
+        for(int i = 0; i < notasAlunoC.length; i++){
+            System.out.print("Informe a nota " + (i + 1) + ": ");
+            notasAlunoC[i] = entrada.nextDouble(); //Dependendo da máquina, pode ser necessário informar o valor com vírgula ao invés de ponto
+        }
+
+        double totalAlunoC = 0;
+        for(double notaC: notasAlunoC){
+            totalAlunoC += notaC;
+
+        }
+
+        System.out.println("\nA média das notas do aluno C é: " + (totalAlunoC / notasAlunoC.length));
+        entrada.close();
     }
 }
